@@ -1,0 +1,267 @@
+@font-face {
+    font-family: "Roboto-Extra-Bold";
+    src: url(./fonts/Roboto/Roboto-Black.ttf) format("truetype");
+    font-weight: bold;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url(./fonts/Roboto/Roboto-Bold.ttf) format("truetype");
+    font-weight: bold;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto-Light";
+    src: url(./fonts/Roboto/Roboto-Light.ttf) format("truetype");
+    font-weight: light;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto-Light-Italic";
+    src: url(./fonts/Roboto/Roboto-LightItalic.ttf) format("truetype");
+    font-weight: light;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url(./fonts/Roboto/Roboto-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-white: #f9faf8;
+    --color-white-faint: #ffffff88;
+    --color-dark-blue: #1f2937;
+    --color-blue: #3882F6;
+    --transition: all 0.5s;
+    --transform: scale(1.2);
+    --color-dark-light: #1F2937;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.firstSection div,
+header div,
+.blockquoteSection div {
+    width: 80%;
+}
+
+.callToAction div, .blockquoteSection div, .secondSection div {
+    width: 1000px;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px;
+    background-color: var(--color-dark-blue);
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+header .logo {
+    color: var(--color-white);
+    font-size: 24px;
+    font-family: "Roboto-Extra-Bold";
+}
+header .logo:hover {
+    color: var(--color-white-faint);
+    cursor: pointer;
+}
+header menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 300px;
+}
+
+menu a {
+    font-family: "Roboto-Regular";
+    font-size: 18px;
+    color: var(--color-white);
+}
+
+.firstSection {
+    background-color: var(--color-dark-blue);
+    padding: 6rem 0;
+}
+
+.firstSection div {
+    display: flex;
+    margin: 0 auto;
+}
+
+.firstSection aside {
+    padding-right: 8rem;
+}
+
+.firstSection h1 {
+    font-size: 48px;
+    font-family: "Roboto-Extra-Bold";
+    color: var(--color-white);
+}
+
+.firstSection p {
+    font-family: "Roboto-Regular";
+    font-size: 18px;
+    color: #e5e7eb;
+    line-height: 2rem;
+    margin: 20px 0;
+}
+
+.btn {
+    width: 140px;
+    padding: 0.5rem;
+    border-radius: 7px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: var(--transition);
+    font-family: "Roboto-Regular", Sans-serif;
+}
+
+.firstSection button {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    border: 1px solid var(--color-blue);
+}
+
+.firstSection button:hover {
+    border: 1px solid var(--color-white);
+    color: var(--color-white);
+    background: transparent;
+}
+
+.firstSection img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 20px;
+}
+
+.secondSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secondSection h1 {
+    color: #1F2937;
+    font-family: "Roboto-Extra-Bold", Sans-serif;
+    margin: 3rem 0;
+}
+
+.secondSection div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.secondSection figure {
+    width: 180px;
+}
+
+.secondSection img {
+    width: 180px;
+    border-radius: 10px;
+}
+
+.secondSection p {
+    text-align: center;
+    font-family: "Roboto-Light";
+    color: var(--color-dark-light);
+    margin-top: 0.7rem;
+}
+
+.blockquoteSection {
+    margin: 6rem 0;
+    background-color: rgba(209, 209, 209, 0.336);
+    padding: 6rem;
+    display: flex;
+    justify-content: center;
+}
+
+.blockquoteSection div {
+    display: flex;
+    flex-direction: column;
+}
+
+.blockquoteSection em {
+    line-height: 1.8rem;
+}
+
+.blockquoteSection cite {
+    align-self: flex-end;
+}
+
+.callToAction {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    background-color: var(--color-blue);
+    margin: 3rem auto;
+    padding: 2.5rem 4rem;
+    border-radius: 10px;
+}
+.callToAction div {
+    width: 70%;
+}
+
+.callToAction h3 {
+    color: var(--color-white);
+    font-family: "Roboto-Regular", Sans-serif;
+}
+
+.callToAction p {
+    color: var(--color-white);
+    font-family: "Roboto-Regular", Sans-serif;
+    margin-top: 1rem;
+}
+
+.callToAction button {
+    color: var(--color-white);
+    background-color: transparent;
+    border: 1px solid var(--color-white);
+    height: 43px;
+}
+.callToAction button:hover {
+    color: var(--color-dark-blue);
+    border-color: var(--color-dark-blue);
+}
+footer {
+    background-color: var(--color-dark-blue);
+}
+footer p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    height: 60px;
+}
