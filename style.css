@@ -33,6 +33,13 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: "Tangerine-Bold";
+    src: url(./fonts/Tangerine//Tangerine-Bold.ttf) format("truetype");
+    font-weight: Bold;
+    font-display: swap;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -96,8 +103,8 @@ header div {
 
 .logo {
     color: var(--color-white);
-    font-size: 24px;
-    font-family: "Roboto-Extra-Bold";
+    font-size: 45px;
+    font-family: "Tangerine-Bold";
 }
 
 .logo:hover {
@@ -500,4 +507,26 @@ textarea {
 .ourTeam p:nth-of-type(2) {
     text-align: center;
     color: var(--color-dark-faint);
+}
+
+
+/* ===================== Media query for Contact us page ================= */
+
+@media (width < 1321px) {
+    .contact-options {
+        width: 700px;
+    }
+}
+
+@media (width < 826px) {
+    .form-section form {
+        width: 90%;
+        padding: 2rem;
+    }
+}
+
+@media (width < 781px) {
+    .contact-options {
+        width: 550px;
+    }
 }
