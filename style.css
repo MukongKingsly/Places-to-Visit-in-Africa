@@ -81,7 +81,7 @@ header div,
 
 .callToAction div,
 .blockquoteSection div,
-.home-places div,
+/* .home-places div, */
 .contact-options,
 .about-profileSection {
     width: 1000px;
@@ -211,7 +211,9 @@ menu a:hover {
 
 .home-places div {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    width: 1000px;
 }
 
 .home-places figure {
@@ -518,10 +520,23 @@ textarea {
     }
 }
 
+@media (width < 1076px) {
+    .home-places div {
+        width: 800px;
+    }
+    
+}
 @media (width < 826px) {
     .form-section form {
         width: 90%;
         padding: 2rem;
+    }
+    .home-places div {
+        width: 650px;
+    }
+    
+    .home-places img, .home-places figure {
+        width: 140px;
     }
 }
 
